@@ -1,3 +1,3 @@
 export type TelegramConfig = {
-  token: string;
+  token: string | undefined;
 };

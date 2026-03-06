@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 import { Injectable } from '@nestjs/common';
 import { DefaultNamingStrategy, NamingStrategyInterface } from 'typeorm';
 import { snakeCase } from 'typeorm/util/StringUtils';
@@ -9,7 +11,6 @@ export class NamingStrategy
   implements NamingStrategyInterface
 {
   tableName(className: string, customName: string): string {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-call
     return customName || pluralize(snakeCase(className));
   }
 

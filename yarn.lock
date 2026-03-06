@@ -1067,12 +1067,74 @@
   resolved "https://registry.npmjs.org/@noble/hashes/-/hashes-1.8.0.tgz#cee43d801fcef9644b11b8194857695acd5f815a"
   integrity sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==
 
+"@noble/hashes@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/@noble/hashes/-/hashes-2.0.1.tgz#fc1a928061d1232b0a52bb754393c37a5216c89e"
+  integrity sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==
+
 "@nuxt/opencollective@0.4.1":
   version "0.4.1"
   resolved "https://registry.npmjs.org/@nuxt/opencollective/-/opencollective-0.4.1.tgz#57bc41d2b03b2fba20b935c15950ac0f4bd2cea2"
   integrity sha512-GXD3wy50qYbxCJ652bDrDzgMr3NFEkIS374+IgFQKkCvk9yiYcLvX2XDYr7UyQxf4wK0e+yqDYRubZ0DtOxnmQ==
   dependencies:
     consola "^3.2.3"
+
+"@otplib/core@13.3.0":
+  version "13.3.0"
+  resolved "https://registry.npmjs.org/@otplib/core/-/core-13.3.0.tgz#7f037af6cc5907c2cff9cf6092952088a0ce5a6e"
+  integrity sha512-pnQDOuCmFVeF/XnboJq9TOJgLoo2idNPJKMymOF8vGqJJ+ReKRYM9bUGjNPRWC0tHjMwu1TXbnzyBp494JgRag==
+
+"@otplib/core@^12.0.1":
+  version "12.0.1"
+  resolved "https://registry.npmjs.org/@otplib/core/-/core-12.0.1.tgz#73720a8cedce211fe5b3f683cd5a9c098eaf0f8d"
+  integrity sha512-4sGntwbA/AC+SbPhbsziRiD+jNDdIzsZ3JUyfZwjtKyc/wufl1pnSIaG4Uqx8ymPagujub0o92kgBnB89cuAMA==
+
+"@otplib/hotp@13.3.0":
+  version "13.3.0"
+  resolved "https://registry.npmjs.org/@otplib/hotp/-/hotp-13.3.0.tgz#135e45c6350ae60bbc1170a1801a6100e49794b8"
+  integrity sha512-XJMZGz2bg4QJwK7ulvl1GUI2VMn/flaIk/E/BTKAejHsX2kUtPF1bRhlZ2+elq8uU5Fs9Z9FHcQK2CPZNQbbUQ==
+  dependencies:
+    "@otplib/core" "13.3.0"
+    "@otplib/uri" "13.3.0"
+
+"@otplib/plugin-base32-scure@13.3.0":
+  version "13.3.0"
+  resolved "https://registry.npmjs.org/@otplib/plugin-base32-scure/-/plugin-base32-scure-13.3.0.tgz#3362fc5dd568e9cecac913fd0fa169148c469142"
+  integrity sha512-/jYbL5S6GB0Ie3XGEWtLIr9s5ZICl/BfmNL7+8/W7usZaUU4GiyLd2S+JGsNCslPyqNekSudD864nDAvRI0s8w==
+  dependencies:
+    "@otplib/core" "13.3.0"
+    "@scure/base" "^2.0.0"
+
+"@otplib/plugin-crypto-noble@13.3.0":
+  version "13.3.0"
+  resolved "https://registry.npmjs.org/@otplib/plugin-crypto-noble/-/plugin-crypto-noble-13.3.0.tgz#edfd6c8c54730cfdfc52c6a3fcd797e204fdd0e2"
+  integrity sha512-wmV+jBVncepgwv99G7Plrdzd0tHfbpXk2U+OD7MO7DzpDqOYEgOPi+IIneksJSTL8QvWdfi+uQEuhnER4fKouA==
+  dependencies:
+    "@noble/hashes" "^2.0.1"
+    "@otplib/core" "13.3.0"
+
+"@otplib/plugin-crypto@^12.0.1":
+  version "12.0.1"
+  resolved "https://registry.npmjs.org/@otplib/plugin-crypto/-/plugin-crypto-12.0.1.tgz#2b42c624227f4f9303c1c041fca399eddcbae25e"
+  integrity sha512-qPuhN3QrT7ZZLcLCyKOSNhuijUi9G5guMRVrxq63r9YNOxxQjPm59gVxLM+7xGnHnM6cimY57tuKsjK7y9LM1g==
+  dependencies:
+    "@otplib/core" "^12.0.1"
+
+"@otplib/totp@13.3.0":
+  version "13.3.0"
+  resolved "https://registry.npmjs.org/@otplib/totp/-/totp-13.3.0.tgz#1d1f61cfd1acd773e1051e6b918227ae34545808"
+  integrity sha512-XfjGNoN8d9S3Ove2j7AwkVV7+QDFsV7Lm7YwSiezNaHffkWtJ60aJYpmf+01dARdPST71U2ptueMsRJso4sq4A==
+  dependencies:
+    "@otplib/core" "13.3.0"
+    "@otplib/hotp" "13.3.0"
+    "@otplib/uri" "13.3.0"
+
+"@otplib/uri@13.3.0":
+  version "13.3.0"
+  resolved "https://registry.npmjs.org/@otplib/uri/-/uri-13.3.0.tgz#7474d6dc0fdf8ab2d0cf2b79e2001446c4e7b6b3"
+  integrity sha512-3oh6nBXy+cm3UX9cxEAGZiDrfxHU2gfelYFV+XNCx+8dq39VaQVymwlU2yjPZiMAi/3agaUeEftf2RwM5F+Cyg==
+  dependencies:
+    "@otplib/core" "13.3.0"
 
 "@paralleldrive/cuid2@^2.2.2":
   version "2.3.1"
@@ -1095,6 +1157,11 @@
   version "0.2.9"
   resolved "https://registry.npmjs.org/@pkgr/core/-/core-0.2.9.tgz#d229a7b7f9dac167a156992ef23c7f023653f53b"
   integrity sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==
+
+"@scure/base@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/@scure/base/-/base-2.0.0.tgz#ba6371fddf92c2727e88ad6ab485db6e624f9a98"
+  integrity sha512-3E1kpuZginKkek01ovG8krQ0Z44E3DHPjc5S2rjJw9lZn3KSQOs8S7wqikF/AH7iRanHypj85uGyxk0XAyC37w==
 
 "@sinclair/typebox@^0.34.0":
   version "0.34.48"
@@ -2498,6 +2565,11 @@ cross-spawn@^7.0.3, cross-spawn@^7.0.6:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+crypto@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/crypto/-/crypto-1.0.1.tgz#2af1b7cad8175d24c8a1b0778255794a21803037"
+  integrity sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -4806,6 +4878,18 @@ ora@5.4.1:
     log-symbols "^4.1.0"
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
+
+otplib@^13.3.0:
+  version "13.3.0"
+  resolved "https://registry.npmjs.org/otplib/-/otplib-13.3.0.tgz#2ead040ab29d1a829d1d7c510b059a3e4c76b2b0"
+  integrity sha512-VYMKyyDG8yt2q+z58sz54/EIyTh7+tyMrjeemR44iVh5+dkKtIs57irTqxjH+IkAL1uMmG1JIFhG5CxTpqdU5g==
+  dependencies:
+    "@otplib/core" "13.3.0"
+    "@otplib/hotp" "13.3.0"
+    "@otplib/plugin-base32-scure" "13.3.0"
+    "@otplib/plugin-crypto-noble" "13.3.0"
+    "@otplib/totp" "13.3.0"
+    "@otplib/uri" "13.3.0"
 
 own-keys@^1.0.1:
   version "1.0.1"
